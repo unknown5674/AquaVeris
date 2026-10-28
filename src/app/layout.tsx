@@ -10,6 +10,13 @@ export const metadata: Metadata = {
   description:
     "AI-powered water quality intelligence. Transform test results into understandable risk assessments and personalised action plans.",
   keywords: ["water quality", "water testing", "drinking water safety", "water treatment"],
+  icons: {
+    icon: [
+      { url: "/icon.svg?v=2", type: "image/svg+xml" },
+    ],
+    shortcut: "/icon.svg?v=2",
+    apple: "/icon.svg?v=2",
+  },
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
