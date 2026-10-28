@@ -42,11 +42,8 @@ export default async function DashboardLayout({ children }: { children: React.Re
             <Droplets className="h-5 w-5" />
           </div>
           <div>
-            <span className="font-bold text-sm tracking-tight text-slate-900 dark:text-slate-100 block">
+            <span className="font-bold text-base tracking-tight text-slate-900 dark:text-slate-100 block">
               AquaVeris
-            </span>
-            <span className="text-[10px] uppercase tracking-wider font-semibold text-sky-600 dark:text-sky-400 block -mt-0.5">
-              ActionIQ
             </span>
           </div>
         </div>
@@ -102,7 +99,7 @@ export default async function DashboardLayout({ children }: { children: React.Re
             <div className="h-8 w-8 rounded-lg bg-gradient-to-tr from-sky-600 to-cyan-500 text-white flex items-center justify-center shadow-xs">
               <Droplets className="h-4 w-4" />
             </div>
-            <span className="font-bold text-sm">AquaVeris ActionIQ</span>
+            <span className="font-bold text-sm">AquaVeris</span>
           </div>
         </header>
 

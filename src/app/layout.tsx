@@ -4,8 +4,8 @@ import "./globals.css"
 
 export const metadata: Metadata = {
   title: {
-    default: "AquaVeris ActionIQ",
-    template: "%s | AquaVeris ActionIQ",
+    default: "AquaVeris",
+    template: "%s | AquaVeris",
   },
   description:
     "AI-powered water quality intelligence. Transform test results into understandable risk assessments and personalised action plans.",

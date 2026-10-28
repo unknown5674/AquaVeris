@@ -124,7 +124,7 @@ export default function SourceFormDialog({ source, trigger, onSuccess }: SourceF
             <div className="flex items-center justify-between">
               <Label htmlFor="treatmentMethod">Current Treatment Method</Label>
               <span className="text-[11px] text-primary flex items-center gap-1 font-medium">
-                <Sparkles className="h-3 w-3" /> ActionIQ Reality Check
+                <Sparkles className="h-3 w-3" /> Reality Check
               </span>
             </div>
             <Select value={treatmentMethod} onValueChange={setTreatmentMethod}>

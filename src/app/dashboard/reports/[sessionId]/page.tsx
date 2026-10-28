@@ -160,7 +160,7 @@ export default async function ReportPage({
           <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4">
             <div>
               <div className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-sky-50 text-sky-700 text-xs font-bold tracking-wider uppercase mb-2 border border-sky-100 dark:bg-sky-950/60 dark:text-sky-300 dark:border-sky-900">
-                <Sparkles className="h-3.5 w-3.5 text-sky-600" /> AquaVeris ActionIQ Report
+                <Sparkles className="h-3.5 w-3.5 text-sky-600" /> AquaVeris Report
               </div>
               <CardTitle className="text-2xl sm:text-3xl font-extrabold text-slate-900 dark:text-slate-100 tracking-tight">
                 Water Safety &amp; Treatment Assessment
@@ -443,7 +443,7 @@ export default async function ReportPage({
           <HelpCircle className="h-4 w-4 text-sky-600" /> Educational Risk Assessment Disclaimer
         </div>
         <p>
-          AquaVeris ActionIQ is designed as an educational decision-support tool. It does not replace certified laboratory testing,
+          AquaVeris is designed as an educational decision-support tool. It does not replace certified laboratory testing,
           official drinking water advisories issued by local public health authorities, or professional medical advice.
           Contamination pathways are modeled hypotheses for guidance and investigation purposes.
         </p>

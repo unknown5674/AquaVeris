@@ -44,7 +44,7 @@ export default function LandingPage() {
         <div className="container mx-auto px-4 h-16 flex items-center justify-between">
           <div className="flex items-center gap-2">
             <Droplets className="h-6 w-6 text-primary" />
-            <span className="font-semibold text-lg tracking-tight">AquaVeris ActionIQ</span>
+            <span className="font-semibold text-lg tracking-tight">AquaVeris</span>
           </div>
           <nav className="flex items-center gap-3">
             <Button variant="ghost" asChild>
@@ -68,7 +68,7 @@ export default function LandingPage() {
             <span className="text-primary">actually mean</span>
           </h1>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            AquaVeris ActionIQ transforms complex water-quality test results into understandable
+            AquaVeris transforms complex water-quality test results into understandable
             risk assessments, treatment compatibility checks, and personalised action plans.
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center pt-2">
@@ -162,7 +162,7 @@ export default function LandingPage() {
             <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
             <p>
               <strong className="text-foreground">Educational tool only.</strong> AquaVeris
-              ActionIQ provides risk assessment guidance and does not replace certified laboratory
+              provides risk assessment guidance and does not replace certified laboratory
               testing, official drinking-water advisories, or professional medical advice. Always
               consult qualified professionals for health decisions related to drinking water.
             </p>
@@ -174,7 +174,7 @@ export default function LandingPage() {
       <footer className="border-t py-6 px-4 text-center text-sm text-muted-foreground">
         <div className="flex items-center justify-center gap-2">
           <Droplets className="h-4 w-4 text-primary" />
-          <span>AquaVeris ActionIQ &mdash; AI-Powered Water Quality Intelligence</span>
+          <span>AquaVeris &mdash; AI-Powered Water Quality Intelligence</span>
         </div>
       </footer>
     </div>

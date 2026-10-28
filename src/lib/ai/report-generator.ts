@@ -87,7 +87,7 @@ export async function generateAIWaterReport(
     })
 
     const prompt = `
-You are the AI Intelligence Engine for "AquaVeris ActionIQ" — an educational water quality intelligence and treatment guidance web application.
+You are the AI Intelligence Engine for "AquaVeris" — an educational water quality intelligence and treatment guidance web application.
 You must analyze the verified rule-engine results and treatment gaps below and output a strictly valid JSON response adhering to this schema:
 
 {

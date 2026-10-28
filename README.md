@@ -1,10 +1,10 @@
-# AquaVeris ActionIQ
+# AquaVeris
 
 **AI-Powered Water Quality Intelligence and Treatment Guidance**
 
-AquaVeris ActionIQ transforms complex water-quality test results into understandable risk assessments and personalised action plans. It evaluates measurements against authoritative reference standards, checks whether your current treatment method addresses detected contaminants, and uses AI to generate plain-language guidance on what to do next.
+AquaVeris transforms complex water-quality test results into understandable risk assessments and personalised action plans. It evaluates measurements against authoritative reference standards, checks whether your current treatment method addresses detected contaminants, and uses AI to generate plain-language guidance on what to do next.
 
-> **Educational tool only.** AquaVeris ActionIQ does not replace certified laboratory testing, official drinking-water advisories, or professional medical advice.
+> **Educational tool only.** AquaVeris does not replace certified laboratory testing, official drinking-water advisories, or professional medical advice.
 
 ---
 

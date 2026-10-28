@@ -63,7 +63,7 @@ export default async function DashboardPage() {
             </h1>
           </div>
           <p className="text-slate-500 mt-1 text-sm dark:text-slate-400">
-            AquaVeris ActionIQ water quality risk intelligence overview.
+            AquaVeris water quality risk intelligence overview.
           </p>
         </div>
         <div className="flex items-center gap-3">

@@ -8,7 +8,7 @@ export default function AuthLayout({ children }: { children: React.ReactNode }) 
       <Link href="/" className="flex items-center gap-2 mb-8 group">
         <Droplets className="h-7 w-7 text-primary" />
         <span className="font-semibold text-xl tracking-tight group-hover:text-primary transition-colors">
-          AquaVeris ActionIQ
+          AquaVeris
         </span>
       </Link>
       {/* Card */}
