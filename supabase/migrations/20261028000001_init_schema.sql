@@ -1,5 +1,5 @@
 -- ====================================================================
--- AquaVeris ActionIQ: Database Migration (Phase 2)
+-- AquaVeris: Database Migration (Phase 2)
 -- 7 Core Tables, Relationships, Indexes, RLS Policies & Auth Trigger
 -- ====================================================================
 

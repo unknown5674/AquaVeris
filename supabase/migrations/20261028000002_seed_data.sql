@@ -1,5 +1,5 @@
 -- ====================================================================
--- AquaVeris ActionIQ: Seed Reference Standards & Treatment Compatibility (Phase 2)
+-- AquaVeris: Seed Reference Standards & Treatment Compatibility (Phase 2)
 -- Standards: WHO Guidelines for Drinking-water Quality (4th Edition) & BIS IS 10500:2012
 -- ====================================================================
 

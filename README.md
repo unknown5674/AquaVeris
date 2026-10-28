@@ -8,17 +8,45 @@ AquaVeris transforms complex water-quality test results into understandable risk
 
 ---
 
-## Tech Stack
+## Features
 
-| Layer | Technology |
-|---|---|
-| Frontend & Backend | Next.js 16 (App Router) |
-| UI | React 19, TypeScript, Tailwind CSS v4, shadcn/ui |
-| Database & Auth | Supabase (PostgreSQL + Supabase Auth) |
-| AI | Google Gemini API |
-| Validation | Zod + React Hook Form |
-| Charts | Recharts |
-| Deployment | Vercel |
+- **Authoritative Standard Verification**: Real-time evaluation against WHO, EPA, and BIS drinking-water guidelines.
+- **Smart Treatment Reality Check**: Identifies critical gaps where current purification methods fail to treat detected chemical or biological contaminants.
+- **Interactive "What-If" Treatment Simulator**: Real-time simulation engine modeling purification outcomes across 5 treatment methods (Boiling, Activated Carbon, 5-Stage RO + UV, Chlorination, Ultrafiltration) with concentration hazard warnings and instant score projection.
+- **AI-Powered Health Explanations & Action Plans**: Dynamic risk breakdowns and structured, prioritised remediation steps powered by Google Gemini.
+- **Historical Quality Analytics**: Visual trend charts tracking water parameters and risk evolution over time.
+- **Water Source Management**: Profiles for household taps, borewells, municipal supply, wells, and surface water.
 
 ---
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js 20+
+- pnpm 9+
+- Supabase project
+- Google Gemini API key
+
+### Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/unknown5674/AquaVeris.git
+cd AquaVeris
+
+# Install dependencies
+pnpm install
+
+# Configure environment variables
+# Create .env.local with:
+# NEXT_PUBLIC_SUPABASE_URL=...
+# NEXT_PUBLIC_SUPABASE_ANON_KEY=...
+# SUPABASE_SERVICE_ROLE_KEY=...
+# AI_API_KEY=...
+# AI_MODEL_NAME=gemini-flash-lite-latest
+
+# Run development server
+pnpm dev
+```
 

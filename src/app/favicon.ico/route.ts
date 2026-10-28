@@ -1,0 +1,18 @@
+import { NextResponse } from "next/server"
+import fs from "fs"
+import path from "path"
+
+export async function GET() {
+  try {
+    const filePath = path.join(process.cwd(), "public", "icon.svg")
+    const fileBuffer = fs.readFileSync(filePath)
+    return new NextResponse(fileBuffer, {
+      headers: {
+        "Content-Type": "image/svg+xml",
+        "Cache-Control": "public, max-age=31536000, immutable",
+      },
+    })
+  } catch (error) {
+    return new NextResponse(null, { status: 404 })
+  }
+}

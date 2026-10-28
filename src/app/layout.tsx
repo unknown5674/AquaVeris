@@ -22,6 +22,11 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className="h-full antialiased">
+      <head>
+        <link rel="icon" type="image/svg+xml" href="/icon.svg?v=3" />
+        <link rel="shortcut icon" href="/icon.svg?v=3" />
+        <link rel="apple-touch-icon" href="/icon.svg?v=3" />
+      </head>
       <body className="min-h-full flex flex-col bg-background text-foreground">
         {children}
         <Toaster position="top-right" richColors />

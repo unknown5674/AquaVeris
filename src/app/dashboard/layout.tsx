@@ -1,6 +1,6 @@
 import { redirect } from "next/navigation"
 import { createClient } from "@/lib/supabase/server"
-import { Droplets, LayoutDashboard, TestTube2, History, Settings, LogOut } from "lucide-react"
+import { Droplets, LayoutDashboard, TestTube2, History, Settings, LogOut, Sliders } from "lucide-react"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Separator } from "@/components/ui/separator"
@@ -9,6 +9,7 @@ const navItems = [
   { href: "/dashboard", label: "Dashboard", icon: LayoutDashboard },
   { href: "/dashboard/sources", label: "Water Sources", icon: Droplets },
   { href: "/dashboard/tests/new", label: "New Analysis", icon: TestTube2 },
+  { href: "/dashboard/simulator", label: "Treatment Simulator", icon: Sliders },
   { href: "/dashboard/history", label: "History", icon: History },
   { href: "/dashboard/settings", label: "Settings", icon: Settings },
 ]

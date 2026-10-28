@@ -18,6 +18,8 @@ import {
   HelpCircle,
   ShieldCheck,
   Activity,
+  Sliders,
+  ArrowRight,
 } from "lucide-react"
 import TestSelectionAssistantModal from "@/features/tests/components/TestSelectionAssistantModal"
 import { WATER_PARAMETERS } from "@/features/tests/constants"
@@ -138,6 +140,11 @@ export default async function ReportPage({
               .filter((r) => r.evaluation_status === "not_tested")
               .map((r) => r.parameter_code)}
           />
+          <Button asChild size="sm" variant="outline" className="gap-1.5 border-sky-300 text-sky-700 hover:bg-sky-50 dark:border-sky-800 dark:text-sky-300">
+            <Link href={`/dashboard/simulator?sessionId=${sessionId}`}>
+              <Sliders className="h-4 w-4 text-sky-600" /> Simulate Fixes
+            </Link>
+          </Button>
           <Badge
             variant="outline"
             className={`text-xs px-3 py-1 font-bold tracking-wide uppercase shadow-xs ${
@@ -275,6 +282,25 @@ export default async function ReportPage({
                 })}
               </div>
             )}
+
+            {/* Simulator Action Banner */}
+            <div className="pt-2">
+              <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 p-4 rounded-xl bg-gradient-to-r from-sky-50 via-cyan-50/50 to-blue-50 border border-sky-200 dark:from-slate-800 dark:to-slate-800/80 dark:border-slate-700">
+                <div className="space-y-0.5">
+                  <h4 className="text-sm font-bold text-slate-900 dark:text-slate-100 flex items-center gap-1.5">
+                    <Sliders className="h-4 w-4 text-sky-600" /> Test Solutions in Treatment Simulator
+                  </h4>
+                  <p className="text-xs text-slate-600 dark:text-slate-400">
+                    Load these exact {readingList.length} readings into the interactive simulator to model Reverse Osmosis, Boiling, or Carbon filtration outcomes.
+                  </p>
+                </div>
+                <Button asChild size="sm" className="gap-1.5 shrink-0 bg-sky-600 hover:bg-sky-700 text-white font-semibold shadow-xs">
+                  <Link href={`/dashboard/simulator?sessionId=${sessionId}`}>
+                    Launch Simulator <ArrowRight className="h-4 w-4" />
+                  </Link>
+                </Button>
+              </div>
+            </div>
           </CardContent>
         </Card>
       )}
