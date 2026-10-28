@@ -1,0 +1,122 @@
+@import "tailwindcss";
+
+/* ============================================================
+   AquaVeris ActionIQ Theme Tokens — Water Intelligence Aesthetic
+   ============================================================ */
+
+@theme {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+}
+
+:root {
+  /* Crisp Oceanic Blue Water Theme */
+  --background: #f4f8fb;
+  --foreground: #0f172a;
+  --card: #ffffff;
+  --card-foreground: #0f172a;
+  --popover: #ffffff;
+  --popover-foreground: #0f172a;
+  --primary: #0284c7;
+  --primary-foreground: #ffffff;
+  --secondary: #e0f2fe;
+  --secondary-foreground: #0369a1;
+  --muted: #f1f5f9;
+  --muted-foreground: #64748b;
+  --accent: #e0f2fe;
+  --accent-foreground: #0284c7;
+  --destructive: #ef4444;
+  --destructive-foreground: #ffffff;
+  --border: #e2e8f0;
+  --input: #cbd5e1;
+  --ring: #0284c7;
+  --radius: 0.625rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #090e17;
+    --foreground: #f1f5f9;
+    --card: #0f1a2e;
+    --card-foreground: #f1f5f9;
+    --popover: #0f1a2e;
+    --popover-foreground: #f1f5f9;
+    --primary: #38bdf8;
+    --primary-foreground: #032b43;
+    --secondary: #132742;
+    --secondary-foreground: #bae6fd;
+    --muted: #17253b;
+    --muted-foreground: #94a3b8;
+    --accent: #1e3a5f;
+    --accent-foreground: #38bdf8;
+    --destructive: #f87171;
+    --destructive-foreground: #090e17;
+    --border: #1e2e48;
+    --input: #263854;
+    --ring: #38bdf8;
+  }
+}
+
+/* Base resets & typography */
+* {
+  border-color: var(--border);
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-image: 
+    radial-gradient(at 100% 0%, rgba(2, 132, 199, 0.04) 0px, transparent 50%),
+    radial-gradient(at 0% 100%, rgba(14, 165, 233, 0.03) 0px, transparent 50%);
+  background-attachment: fixed;
+  min-height: 100vh;
+}
+
+/* Custom scrollbar for modern browsers */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Radix popover / select animations & high z-index guarantee */
+[data-radix-popper-content-wrapper] {
+  z-index: 9999 !important;
+}
